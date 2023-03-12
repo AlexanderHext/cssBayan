@@ -1,0 +1,66 @@
+/* НОРМАЛАЙЗ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-weight: 800;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  color: black;
+}
+
+/* КОНТЕЙНЕР БАЯНА */
+
+.bayan {
+  width: 60vh;
+  margin: auto;
+  max-height: 100%;
+  color: rgb(13, 0, 255);
+}
+
+/* ТЕКСТ ЧЕРНЫЙ ЕСЛИ НАВЕДЕН КУРСОР*/
+
+.bayan:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* ТЕКСТ ПЛАШКИ ЧЕРНЫЙ ЕСЛИ КЛИК*/
+
+.bayan-input:checked ~ .bayan-label {
+  color: black;
+}
+
+/* РАМКИ ДЛЯ ПЛАШЕК */
+
+.bayan-item {
+  position: relative;
+  border-top: 1px solid rgb(116, 116, 116);
+}
+.bayan-item:last-of-type {
+  border-bottom: 1px solid rgb(116, 116, 116);
+}
+
+/* ЛЕЙБЛ ОПИСАНИЕ */
+
+.bayan-label {
+  display: block;
+  cursor: pointer;
+  padding: 3% 0 3% 0;
+  position: relative;
+}
+
+/* СПРЯТАТЬ ЧЕКБОКС */
+
+.bayan-input {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
